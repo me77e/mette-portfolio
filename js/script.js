@@ -1,6 +1,6 @@
 const portfolioLinks = {
   websivusto: "https://me77e.github.io/Websivuston_kehittaminen_syksy_2025/Ws07_projekti/",
-  figma: "https://www.figma.com/proto/Uyqt47PkV9EQf3n2AGcBfE/Ravintola-varaus--Web?node-id=9-498&p=f&viewport=16%2C110%2C0.14&t=wiVcBKC5v0L1gE8X-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=9%3A498&show-proto-sidebar=1&page-id=0%3A1",
+  figma: "https://www.figma.com/proto/Uyqt47PkV9EQf3n2AGcBfE/Ravintola-varaus--Web?node-id=1-2&t=1EPfFLpC65Qg4VO7-1",
   linkedin: "https://www.linkedin.com/in/mette-holmström-3308ab381",
   cv: "cv.pdf"
 };
