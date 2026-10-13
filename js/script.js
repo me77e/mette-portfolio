@@ -8,7 +8,10 @@ const portfolioLinks = {
 document.querySelectorAll("[data-link]").forEach((link) => {
   const address = portfolioLinks[link.dataset.link];
   if (!address) return;
+
   link.href = address;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
   link.removeAttribute("aria-disabled");
   link.removeAttribute("role");
   link.removeAttribute("title");
