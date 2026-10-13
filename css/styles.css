@@ -190,3 +190,73 @@ p { margin: 0 0 22px; }
   font-size: 0.9rem;
 }
 
+.certificates {
+  margin-top: 4rem;
+}
+
+.certificates h2 {
+  color: #243f35;
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.certificate-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+}
+
+.certificate-button {
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.certificate-button img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+}
+
+.certificate-dialog {
+  position: relative;
+  width: min(90vw, 900px);
+  max-width: none;
+  max-height: 90vh;
+  padding: 2.5rem 1rem 1rem;
+  border: 0;
+  border-radius: 12px;
+}
+
+.certificate-dialog::backdrop {
+  background: rgb(0 0 0 / 75%);
+}
+
+.certificate-dialog img {
+  display: block;
+  max-width: 100%;
+  max-height: 80vh;
+  margin: auto;
+  object-fit: contain;
+}
+
+.certificate-close {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.8rem;
+  border: 0;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.certificate-hint {
+  font-style: italic;
+}
+

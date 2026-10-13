@@ -16,3 +16,34 @@ document.querySelectorAll("[data-link]").forEach((link) => {
   link.removeAttribute("role");
   link.removeAttribute("title");
 });
+
+const certificateDialog = document.querySelector("#certificateDialog");
+const largeCertificate = document.querySelector("#largeCertificate");
+let certificateScrollPosition = 0;
+
+document.querySelectorAll(".certificate-button").forEach((button) => {
+  button.addEventListener("click", () => {
+    certificateScrollPosition = window.scrollY;
+
+    const image = button.querySelector("img");
+    largeCertificate.src = image.src;
+    largeCertificate.alt = image.alt;
+    certificateDialog.showModal();
+  });
+});
+
+document.querySelector(".certificate-close").addEventListener("click", () => {
+  certificateDialog.close();
+});
+
+certificateDialog.addEventListener("click", (event) => {
+  if (event.target === certificateDialog) {
+    certificateDialog.close();
+  }
+});
+
+certificateDialog.addEventListener("close", () => {
+  window.scrollTo(0, certificateScrollPosition);
+});
+
+
